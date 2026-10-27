@@ -39,9 +39,6 @@
     h1 span { display: inline; }
     h1 .name-end { display: inline; color: var(--clay); }
     .intro { margin: 0; font-size: 17px; line-height: 1.65; letter-spacing: -.015em; }
-    .hero-link { display: inline-flex; align-items: center; gap: 30px; margin-top: 34px; min-height: 46px; border-bottom: 1px solid var(--ink); font-size: 12px; }
-    .hero-link span { transition: transform .2s; font-size: 19px; }
-    .hero-link:hover span { transform: translate(3px, 3px); }
     .artwork { margin: 0; min-width: 0; position: relative; width: 100%; max-width: 380px; justify-self: end; }
     .art-stage { position: relative; aspect-ratio: 1; width: 100%; }
     .art-stage > svg { width: 100%; height: 100%; overflow: visible; }
@@ -69,9 +66,7 @@
     .research-item h3 { margin: 0; font-size: clamp(15px, 1.6vw, 19px); font-weight: 500; letter-spacing: -.025em; }
     .research-item .field-index { display: block; margin-top: 10px; font-size: 9px; letter-spacing: .13em; color: var(--muted); }
     .perspective { padding-block: 0 22px; }
-    .perspective-inner { border-top: 1px solid var(--line); padding-top: 24px; }
-    .perspective-heading h2 { margin: 0 0 14px; font-family: var(--sans); font-size: 13px; font-weight: 500; line-height: 1.5; }
-    blockquote { margin: 0; padding-left: 18px; border-left: 2px solid var(--line); max-width: 850px; }
+    .perspective-inner { padding-top: 8px; }
     .motto-text { font-family: var(--sans); font-size: 15px; line-height: 1.75; margin: 0; color: var(--muted); }
     .footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 100px; font-size: 11px; color: var(--muted); }
     .footer-name { color: var(--ink); font-weight: 600; }
@@ -93,7 +88,6 @@
       h1 span + span { margin-left: .10em; }
       .hero .eyebrow { font-size: 9px; }
       .intro { font-size: 16px; }
-      .hero-link { margin-top: 17px; }
       .artwork { width: 100%; max-width: 300px; justify-self: center; }
       .art-stage { margin-top: -14px; }
       .art-kicker { top: 11px; }
@@ -111,7 +105,7 @@
       .research-item h3 { font-size: 17px; line-height: 1.4; align-self: end; }
       .research-item .field-index { font-size: 8px; margin-top: 7px; align-self: start; }
       .perspective { padding-block: 0 18px; }
-      .perspective-inner { padding-top: 22px; }
+      .perspective-inner { padding-top: 8px; }
       .motto-text { font-size: 14px; line-height: 1.75; }
       .footer { min-height: 100px; align-items: flex-start; padding-block: 24px; font-size: 10px; }
       .footer-name { display: block; margin-bottom: 6px; }
@@ -130,7 +124,7 @@
       Litian Li
     </a>
     <nav class="navigation" aria-label="Main navigation">
-      <a href="#research">Research</a><a href="#perspective">Perspective</a><a class="nav-github" href="https://github.com/llt-warlock">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+      <a href="#research">Research</a><a class="nav-github" href="https://github.com/llt-warlock">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
     </nav>
   </header>
   <main id="main">
@@ -139,7 +133,6 @@
         <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PhD Researcher · TU Delft</p>
         <h1 id="name"><span>Litian</span> <span>Li<span class="name-end">.</span></span></h1>
         <p class="intro">Exploring intelligence.<br>Experiencing life.</p>
-        <a class="hero-link" href="#perspective">A personal perspective <span aria-hidden="true">↘</span></a>
       </div>
       <figure class="artwork" aria-labelledby="art-caption">
         <div class="art-stage" id="art-stage">
@@ -225,14 +218,11 @@
         <article class="research-item"><svg class="research-illustration" viewBox="0 0 260 110" fill="none" aria-hidden="true"><path d="M37 88l90-36l96 36l-90 20Z" stroke="currentColor" stroke-width=".75" opacity=".45"/><path d="M127 52v-38M127 52l55 20M127 52L76 73" stroke="currentColor" stroke-width=".8" stroke-dasharray="3 4"/><path d="M106 42l24-12l26 12v32l-24 12l-26-12Z" fill="#f4f1e9" stroke="currentColor"/><path d="M106 42l26 12l24-12M132 54v32" stroke="currentColor"/><path d="M71 42c-13 27 11 55 56 60c42 4 78-15 72-40" stroke="#a64c32"/><path d="M194 67l5-6l6 5" stroke="#a64c32"/><circle cx="130" cy="30" r="4" fill="#a64c32"/></svg><h3>Embodied AI</h3><span class="field-index" aria-hidden="true">03 / EXPERIENCE</span></article>
       </div>
     </section>
-    <section class="perspective" id="perspective" aria-labelledby="perspective-title">
+    <div class="perspective" id="perspective">
       <div class="wrap perspective-inner">
-        <div class="perspective-heading"><h2 id="perspective-title">A personal perspective</h2></div>
-        <blockquote id="motto">
-          <p class="motto-text">Just as a model learns to generalize from diverse data, I want to grow through the full range of human experience. Let me live more, face the many questions life puts before me, and know both joy and struggle. Life is both a cage and a playground. I want to draw closer to the truth of existence and become more fully myself—even if none of it has any ultimate meaning, even if it all comes to nothing in the end.</p>
-        </blockquote>
+        <p class="motto-text" id="motto">I want to draw closer to the truth of existence and become more fully myself—even if none of it has any ultimate meaning, even if it all comes to nothing in the end.</p>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="wrap footer"><div><span class="footer-name">Litian Li</span> <span aria-hidden="true">·</span> PhD Researcher at TU Delft</div><div class="footer-links"><a href="https://github.com/llt-warlock">GitHub <span aria-hidden="true">↗</span></a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
   <script>
